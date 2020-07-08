@@ -1,8 +1,6 @@
 # TODOs
-* Move static content
-* Add favicon
-* Add page preview
 * Deploy to gh pages
 * Move reading list content + styles
+* Add page preview
 * Configure namecheap
 * Double check heroku configurations
