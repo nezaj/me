@@ -22,18 +22,18 @@ const Icon = ({id, url, icon}) => (
 const App = () => {
   return (
     <div className="container">
-      <div className="headshot"></div>
-      <div className="greeting">Heya, I'm Joe!</div>
-      <div className="headline">Three things I tell myself everyday:</div>
+      <div className="avatar"></div>
+      <div className="title">Heya, I'm Joe!</div>
+      <div className="subtitle">Three things I tell myself everyday:</div>
       <div className="principles">
         <li>Be present</li>
         <li>Be honest</li>
         <li>Be consistent</li>
       </div>
-      <div className="sub-greeting">
+      <div className="about">
         This is where all my stuff lives on the web
       </div>
-      <div className="home-icons">
+      <div className="icons-container">
         <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
         <Icon id="Food diary" url="https://nezaj.github.io/web-bitelog/" icon="fa-spoon" />
         <Icon id="Senior Engineer Jobsearch Course" url="https://jobsearch.dev/" icon="fa-laptop" />

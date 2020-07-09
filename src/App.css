@@ -1,4 +1,5 @@
-/* Welcome page CSS */
+/* Tags */
+/* --------------------------------------------------------------- */
 :root {
   --text-color: white;
   --link-color: white;
@@ -12,9 +13,9 @@
   --bg-fallback: #0072ff; /* http://uigradients.com/#FacebookMessenger */
 }
 
-/* Styled tags */
 body {
   font-size: 62.5%;
+  font-family: Montserrat, Helvetica, sans-serif;
   background: var(
     --bg-fallback
   ); /* For browsers that don't support gradients */
@@ -38,25 +39,6 @@ body {
   color: var(--text-color);
 }
 
-.greeting {
-  font-size: 3.5rem;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif, futura, helvetica,
-    arial, sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-  color: inherit;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.sub-greeting {
-  font-size: 1rem;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 1.1;
-  color: inherit;
-}
-
 a {
   text-decoration: none;
   color: var(--link-color);
@@ -75,7 +57,9 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-/* Styled elements */
+
+/* Styles */
+/* --------------------------------------------------------------- */
 .container {
   width: 90%;
   height: auto;
@@ -86,44 +70,47 @@ a:hover {
   box-sizing: border-box;
 }
 
-@media (min-width: 481px) {
-  .headshot {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    background-image: url("./headshot.jpg");
-    background-size: 120%;
-    overflow: hidden;
-    border-radius: 125px;
-    box-shadow: 0 0 0 10px white;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+.avatar {
+  background-image: url(./headshot.jpg);
+  background-position-y: 20%;
+  background-size: 105%;
+  border-radius: 125px;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Phone */
 @media (min-width: 320px) and (max-width: 480px) {
-  .headshot {
+  .avatar {
     width: 150px;
     height: 150px;
-    margin: 0 auto;
-    background-image: url("./headshot.jpg");
-    background-size: 120%;
-    overflow: hidden;
-    border-radius: 125px;
-    box-shadow: 0 0 0 10px white;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 }
 
-.headline {
-  font-size: 1.25rem;
-  letter-spacing: 2px;
+/* Tablet / Desktop */
+@media (min-width: 481px) {
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+  .avatar:hover {
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.principles {
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 30px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -134,11 +121,19 @@ a:hover {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 1.75em;
-  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-.home-icons {
-  margin-top: 20px;
+.about {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.icons-container {
   font-size: 3em;
 }
 
