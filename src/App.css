@@ -83,7 +83,7 @@ a:hover {
 }
 
 /* Phone */
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .avatar {
     width: 150px;
     height: 150px;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 /* Tablet / Desktop */
-@media (min-width: 481px) {
+@media screen and (min-width: 481px) {
   .avatar {
     width: 250px;
     height: 250px;
@@ -140,4 +140,12 @@ a:hover {
 .icon {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+
+/* Tool-top persists when going backwards on mobile devices, so let's hide it */
+@media (max-width: 800px) {
+  .__react_component_tooltip.show {
+    display: none;
+  }
 }
