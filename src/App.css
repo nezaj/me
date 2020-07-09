@@ -16,27 +16,34 @@
 body {
   font-size: 62.5%;
   font-family: Montserrat, Helvetica, sans-serif;
+  color: var(--text-color);
+
+  /* Background gradient hackary to support all the browsers! */
+  /* For browsers that don't support gradients */
   background: var(
     --bg-fallback
-  ); /* For browsers that don't support gradients */
+  );
+  /* Safari 5.1-6.0 */
   background: -webkit-radial-gradient(
     var(--bg-light) 5%,
     var(--bg-dark)
-  ); /* Safari 5.1-6.0 */
+  );
+  /* For Opera 11.6-12.0 */
   background: -o-radial-gradient(
     var(--bg-light) 5%,
     var(--bg-dark)
-  ); /* For Opera 11.6-12.0 */
+  );
+  /* For Firefox 3.6-15 */
   background: -moz-radial-gradient(
     var(--bg-light) 5%,
     var(--bg-dark)
-  ); /* For Firefox 3.6-15 */
+  );
+  /* Standard syntax */
   background: radial-gradient(
     circle,
     var(--bg-light) 5%,
     var(--bg-dark)
-  ); /* Standard syntax */
-  color: var(--text-color);
+  );
 }
 
 a {
@@ -50,15 +57,11 @@ a {
   }
 }
 
-a:visited {
-  color: var(--link-color);
-}
 a:hover {
   color: var(--link-hover-color);
 }
 
-
-/* Styles */
+/* Shared */
 /* --------------------------------------------------------------- */
 .container {
   width: 90%;
@@ -98,6 +101,7 @@ a:hover {
   }
   .avatar:hover {
     box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
   }
 }
 
@@ -115,12 +119,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
+/* Home Page */
+/* --------------------------------------------------------------- */
+
 .principles li {
   list-style-type: none;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 1.75em;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -133,19 +140,45 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.icons-container {
-  font-size: 3em;
-}
-
 .icon {
   margin-left: 5px;
   margin-right: 5px;
+  font-size: 2rem;
 }
 
+.page-icon {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 2rem;
+}
+
+.page-icon:hover {
+  cursor: pointer;
+  color: var(--link-hover-color);
+}
 
 /* Tool-top persists when going backwards on mobile devices, so let's hide it */
 @media (max-width: 800px) {
   .__react_component_tooltip.show {
     display: none;
   }
+}
+
+/* Books Page */
+/* --------------------------------------------------------------- */
+.books ul {
+  padding: 0;
+}
+.books li {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.books h3 {
+  font-size: 2rem;
 }
