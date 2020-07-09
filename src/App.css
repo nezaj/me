@@ -20,30 +20,15 @@ body {
 
   /* Background gradient hackary to support all the browsers! */
   /* For browsers that don't support gradients */
-  background: var(
-    --bg-fallback
-  );
+  background: var(--bg-fallback);
   /* Safari 5.1-6.0 */
-  background: -webkit-radial-gradient(
-    var(--bg-light) 5%,
-    var(--bg-dark)
-  );
+  background: -webkit-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
   /* For Opera 11.6-12.0 */
-  background: -o-radial-gradient(
-    var(--bg-light) 5%,
-    var(--bg-dark)
-  );
+  background: -o-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
   /* For Firefox 3.6-15 */
-  background: -moz-radial-gradient(
-    var(--bg-light) 5%,
-    var(--bg-dark)
-  );
+  background: -moz-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
   /* Standard syntax */
-  background: radial-gradient(
-    circle,
-    var(--bg-light) 5%,
-    var(--bg-dark)
-  );
+  background: radial-gradient(circle, var(--bg-light) 5%, var(--bg-dark));
 }
 
 a {

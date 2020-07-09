@@ -99,6 +99,6 @@ const books = `### 2019 (Age 27-28)
 * Fooled by Randomness
 * Where are the Customers' Yachts
 * The Investment Answer
-`
+`;
 
 export default books;

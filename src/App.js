@@ -7,8 +7,6 @@ import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 import books from "./books.js";
 
-console.log(books)
-
 // Pages
 const HOME_PAGE = "home";
 const BOOKS_PAGE = "books";
@@ -23,23 +21,23 @@ const getPage = (queryString) => {
 
 // Functional Components
 // ---------------------------------------------------------------------------
-const Icon = ({id, url, icon}) => (
+const Icon = ({ id, url, icon }) => (
   <a title={id} href={url} className="icon">
     <i data-tip data-for={id} className={`fa ${icon}`}></i>
   </a>
-)
+);
 
-const PageIcon = ({id, action, icon}) => (
+const PageIcon = ({ id, action, icon }) => (
   <div title={id} onClick={action} className="page-icon">
     <i data-tip data-for={id} className={`fa ${icon}`}></i>
   </div>
-)
+);
 
-const Tooltip = ({id}) => (
+const Tooltip = ({ id }) => (
   <div>
-  <ReactTooltip id={id} place="top" effect="solid">
-    {id}
-  </ReactTooltip>
+    <ReactTooltip id={id} place="top" effect="solid">
+      {id}
+    </ReactTooltip>
   </div>
 );
 
@@ -48,13 +46,11 @@ const BooksPage = ({ updatePage }) => (
     <div class="subtitle">This is where I list the books I've read</div>
     <ReactMarkdown source={books} />
     <div className="icons-container">
-      <PageIcon id="Home"
-        action={() => updatePage(HOME_PAGE)}
-        icon="fa-home" />
+      <PageIcon id="Home" action={() => updatePage(HOME_PAGE)} icon="fa-home" />
       <Tooltip id="Home" />
     </div>
   </div>
-)
+);
 
 const HomePage = ({ updatePage }) => (
   <div className="home">
@@ -64,19 +60,35 @@ const HomePage = ({ updatePage }) => (
       <li>Be honest</li>
       <li>Be consistent</li>
     </div>
-    <div className="about">
-      This is where all my stuff lives on the web
-    </div>
+    <div className="about">This is where all my stuff lives on the web</div>
     <div className="icons-container">
       <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
-      <Icon id="Food diary" url="https://nezaj.github.io/web-bitelog/" icon="fa-spoon" />
-      <PageIcon id="Reading list"
+      <Icon
+        id="Food diary"
+        url="https://nezaj.github.io/web-bitelog/"
+        icon="fa-spoon"
+      />
+      <PageIcon
+        id="Reading list"
         action={() => updatePage(BOOKS_PAGE)}
-        icon="fa-book" />
-      <Icon id="Senior Engineer Jobsearch Course" url="https://jobsearch.dev/" icon="fa-laptop" />
-      <Icon id="How to Get Into a Programming Bootcamp" url="https://leanpub.com/programmingbootcamp" icon="fa-pencil" />
+        icon="fa-book"
+      />
+      <Icon
+        id="Senior Engineer Jobsearch Course"
+        url="https://jobsearch.dev/"
+        icon="fa-laptop"
+      />
+      <Icon
+        id="How to Get Into a Programming Bootcamp"
+        url="https://leanpub.com/programmingbootcamp"
+        icon="fa-pencil"
+      />
       <Icon id="Github" url="https://github.com/nezaj" icon="fa-github" />
-      <Icon id="LinkedIn" url="http://www.linkedin.com/in/joeaverbukh" icon="fa-linkedin-square" />
+      <Icon
+        id="LinkedIn"
+        url="http://www.linkedin.com/in/joeaverbukh"
+        icon="fa-linkedin-square"
+      />
 
       <Tooltip id="Travels" />
       <Tooltip id="Food diary" />
@@ -112,11 +124,14 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="header">
-          <div className="avatar" onClick={() => this.updatePage(HOME_PAGE)}></div>
+          <div
+            className="avatar"
+            onClick={() => this.updatePage(HOME_PAGE)}
+          ></div>
           <div className="title">Heya, I'm Joe!</div>
         </div>
-        {page === HOME_PAGE && <HomePage updatePage={this.updatePage} /> }
-        {page === BOOKS_PAGE && <BooksPage updatePage={this.updatePage} /> }
+        {page === HOME_PAGE && <HomePage updatePage={this.updatePage} />}
+        {page === BOOKS_PAGE && <BooksPage updatePage={this.updatePage} />}
       </div>
     );
   }
