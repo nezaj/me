@@ -65,7 +65,7 @@ const HomePage = ({ updatePage }) => (
       <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
       <Icon
         id="Food diary"
-        url="https://nezaj.github.io/web-bitelog/"
+        url="http://joelogs.com"
         icon="fa-spoon"
       />
       <PageIcon
