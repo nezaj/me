@@ -143,6 +143,14 @@ a:hover {
   color: var(--link-hover-color);
 }
 
+
+@media screen and (max-width: 350px) {
+  .page-icon,
+  .icon {
+    font-size: 1.6rem;  /* Hack to get things to fit nicely on one-line */
+  }
+}
+
 /* Tool-top persists when going backwards on mobile devices, so let's hide it */
 @media (max-width: 800px) {
   .__react_component_tooltip.show {

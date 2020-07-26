@@ -74,6 +74,11 @@ const HomePage = ({ updatePage }) => (
         icon="fa-book"
       />
       <Icon
+        id="Vibes"
+        url="https://twitter.com/JoeAverbukh"
+        icon="fa-music"
+      />
+      <Icon
         id="Senior Engineer Jobsearch Course"
         url="https://jobsearch.dev/"
         icon="fa-laptop"
@@ -93,6 +98,7 @@ const HomePage = ({ updatePage }) => (
       <Tooltip id="Travels" />
       <Tooltip id="Food diary" />
       <Tooltip id="Reading list" />
+      <Tooltip id="Vibes" />
       <Tooltip id="Senior Engineer Jobsearch Course" />
       <Tooltip id="How to Get Into a Programming Bootcamp" />
       <Tooltip id="Github" />
