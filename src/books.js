@@ -1,22 +1,26 @@
-const books = `### 2019 (Age 27-28)
-* Never Split the Difference (Kindle)
+const books = `### 2020
+* The Mom Test (Kindle)
 
-### 2018 (Age 26-27)
+### 2019
+* Never Split the Difference (Kindle)
+* The Story of Pyschology (Kindle)
+
+### 2018
 * Men Are from Mars, Women Are from Venus (Kindle)
 * Advanced Sports Nutrition (Kindle)
 * Principles: Life and Work (Kindle)
 * Generations (Kindle)
 * Love in a Time of Cholera (Kindle)
 * On the Road: Original Scroll (Kindle)
-* Homo Sapiens (Kindle)
+* Sapiens (Kindle)
 
-### 2017 (Age 25-26)
+### 2017
 * For Young Men Only (Kindle)
 * Ready Player One (Audible)
 * The Undoing Project (Audible)
 * East of Eden (Audible)
 
-### 2016 (Age 24-25)
+### 2016
 * 48 Laws of Power (Audible)
 * The Alchemist (Audible)
 * Lolita (Audible)
@@ -29,7 +33,7 @@ const books = `### 2019 (Age 27-28)
 * The Kite Runner (Audible)
 * Man's Search for Meaning (Audible)
 
-### 2015 (Age 23-24)
+### 2015
 * Three Comrades (Kindle)
 * Golden Compass (Kindle)
 * Brave New World (Kindle)
@@ -42,7 +46,7 @@ const books = `### 2019 (Age 27-28)
 * A History of the World in Six Glasses (Kindle)
 * Introduction to Tornado
 
-### 2014 (Age 22-23)
+### 2014
 * Tao: The Watercourse Way
 * Journey to the East
 * Peter Camenzind
@@ -56,7 +60,7 @@ const books = `### 2019 (Age 27-28)
 * JavaScript The Good Parts
 * Test-Driven Python Development
 
-### 2013 (Age 21-22)
+### 2013
 * The Catcher in the Rye
 * Pride and Prejudice (2/3)
 * The Perks of Being a Wallflower
@@ -68,14 +72,14 @@ const books = `### 2019 (Age 27-28)
 * The Story of Philosophy
 * Steppenwolf
 
-### 2012 (Age 20-21)
+### 2012
 * Getting Things Done
 * The 7 Habits of Highly Effective People
 * The  Way of Zen
 * Mindless Eating
 * Eat, Drink, and Be Healthy
 
-### 2011 (Age 19-20)
+### 2011
 * How to Win Friends and Influence People
 * The New New Thing
 * Ahead of the Curve
@@ -84,7 +88,7 @@ const books = `### 2019 (Age 27-28)
 * The Big Short
 * When Genius Failed
 
-### 2010 (Age 18-19)
+### 2010
 * My Life as a Quant
 * Goldman Sachs: The Culture of Success
 * Den of Thieves
