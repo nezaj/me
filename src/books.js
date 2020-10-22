@@ -3,6 +3,9 @@ const books = `### 2020
 * No Filter: The Inside Story of Instagram (Kindle)
 * Almanack of Naval Ravikant (Kindle)
 * The Company (Kindle)
+* Structure and Interpretation of Computer Programs (PDF)
+* Don't Get Too Comfortable (Audible)
+* Salt, Fat, Acid, Heat (Kindle)
 
 ### 2019
 * Never Split the Difference (Kindle)
