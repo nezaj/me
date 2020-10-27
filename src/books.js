@@ -6,6 +6,7 @@ const books = `### 2020
 * Structure and Interpretation of Computer Programs (PDF)
 * Don't Get Too Comfortable (Audible)
 * Salt, Fat, Acid, Heat (Kindle)
+* Fraud by David Rakoff (Audible)
 
 ### 2019
 * Never Split the Difference (Kindle)
