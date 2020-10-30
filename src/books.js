@@ -7,6 +7,7 @@ const books = `### 2020
 * Don't Get Too Comfortable (Audible)
 * Salt, Fat, Acid, Heat (Kindle)
 * Fraud by David Rakoff (Audible)
+* Love, Dishonor, Marry, Die, Cherish, Perish: A Novel (Audible)
 
 ### 2019
 * Never Split the Difference (Kindle)
