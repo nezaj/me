@@ -45,7 +45,7 @@ const HomePage = ({ updatePage }) => (
       <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
       <Icon id="Food diary" url="http://joelogs.com" icon="fa-spoon" />
       <Icon id="Reading list" url="https://zeneca.io/joe" icon="fa-book" />
-      <Icon id="Vibes" url="https://twitter.com/JoeAverbukh" icon="fa-music" />
+      <Icon id="Vibes" url="https://joevibes.com" icon="fa-music" />
       <Icon
         id="Senior Engineer Jobsearch Course"
         url="https://jobsearch.dev/"
