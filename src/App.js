@@ -54,12 +54,23 @@ const HomePage = ({ updatePage }) => (
       <Icon
         id="How to Get Into a Programming Bootcamp"
         url="https://leanpub.com/programmingbootcamp"
-        icon="fa-pencil"
+        icon="fa-graduation-cap"
       />
+      <Icon
+        id="Growing Pains"
+        url="https://growingpainsbook.com"
+        icon="fa-pagelines"
+      />
+
       <Icon id="Github" url="https://github.com/nezaj" icon="fa-github" />
       <Icon
+        id="Twitter"
+        url="https://www.twitter.com/joeaverbukh"
+        icon="fa-twitter"
+      />
+      <Icon
         id="LinkedIn"
-        url="http://www.linkedin.com/in/joeaverbukh"
+        url="https://www.linkedin.com/in/joeaverbukh"
         icon="fa-linkedin-square"
       />
 
@@ -69,7 +80,9 @@ const HomePage = ({ updatePage }) => (
       <Tooltip id="Vibes" />
       <Tooltip id="Senior Engineer Jobsearch Course" />
       <Tooltip id="How to Get Into a Programming Bootcamp" />
+      <Tooltip id="Growing Pains" />
       <Tooltip id="Github" />
+      <Tooltip id="Twitter" />
       <Tooltip id="LinkedIn" />
     </div>
   </div>
