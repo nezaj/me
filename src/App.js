@@ -42,11 +42,16 @@ const HomePage = ({ updatePage }) => (
     </div>
     <div className="about">This is where all my stuff lives on the web</div>
     <div className="icons-container">
+      {/* Blogs */}
       <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
-      <Icon id="Food diary" url="http://joelogs.com" icon="fa-spoon" />
-      <Icon id="Reading list" url="https://zeneca.io/joe" icon="fa-book" />
       <Icon id="Vibes" url="https://joevibes.com" icon="fa-music" />
       <Icon id="Moves" url="https://joemoves.com" icon="fa-superpowers" />
+
+      {/* Apps */}
+      <Icon id="Foods" url="http://joelogs.com" icon="fa-spoon" />
+      <Icon id="Books" url="https://zeneca.io/joe" icon="fa-book" />
+
+      {/* Books/Courses */}
       <Icon
         id="Senior Engineer Jobsearch Course"
         url="https://jobsearch.dev/"
@@ -63,6 +68,7 @@ const HomePage = ({ updatePage }) => (
         icon="fa-pagelines"
       />
 
+      {/* Social */}
       <Icon id="Github" url="https://github.com/nezaj" icon="fa-github" />
       <Icon
         id="Twitter"
@@ -76,13 +82,16 @@ const HomePage = ({ updatePage }) => (
       />
 
       <Tooltip id="Travels" />
-      <Tooltip id="Food diary" />
-      <Tooltip id="Reading list" />
       <Tooltip id="Vibes" />
       <Tooltip id="Moves" />
+
+      <Tooltip id="Foods" />
+      <Tooltip id="Books" />
+
       <Tooltip id="Senior Engineer Jobsearch Course" />
       <Tooltip id="How to Get Into a Programming Bootcamp" />
       <Tooltip id="Growing Pains" />
+
       <Tooltip id="Github" />
       <Tooltip id="Twitter" />
       <Tooltip id="LinkedIn" />
