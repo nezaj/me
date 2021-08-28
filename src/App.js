@@ -24,9 +24,9 @@ const Icon = ({ id, url, icon }) => (
   </a>
 );
 
-const Tooltip = ({ id }) => (
+const Tooltip = ({ id, place }) => (
   <div>
-    <ReactTooltip id={id} place="top" effect="solid">
+    <ReactTooltip id={id} place={place || "top"} effect="solid">
       {id}
     </ReactTooltip>
   </div>
@@ -38,7 +38,19 @@ const HomePage = ({ updatePage }) => (
     <div className="principles">
       <li>Be present</li>
       <li>Be honest</li>
-      <li>Be consistent</li>
+      <li>
+        <a
+          href="https://consistent.fit"
+          style={{
+            "text-decoration": "underline",
+            "text-underline-offset": "3px",
+          }}
+        >
+          <span data-tip data-for="Consistent Fitness">
+            Be consistent
+          </span>
+        </a>
+      </li>
     </div>
     <div className="about">This is where all my stuff lives on the web</div>
     <div className="icons-container">
@@ -81,6 +93,7 @@ const HomePage = ({ updatePage }) => (
         icon="fa-linkedin-square"
       />
 
+      <Tooltip id="Consistent Fitness" place="bottom" />
       <Tooltip id="Travels" />
       <Tooltip id="Vibes" />
       <Tooltip id="Moves" />
