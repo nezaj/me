@@ -83,6 +83,11 @@ const HomePage = ({ updatePage }) => (
       {/* Social */}
       <Icon id="Github" url="https://github.com/nezaj" icon="fa-github" />
       <Icon
+        id="Instagram"
+        url="https://www.instagram.com/notafraidof138"
+        icon="fa-instagram"
+      />
+      <Icon
         id="Twitter"
         url="https://www.twitter.com/joeaverbukh"
         icon="fa-twitter"
@@ -106,6 +111,7 @@ const HomePage = ({ updatePage }) => (
       <Tooltip id="Growing Pains" />
 
       <Tooltip id="Github" />
+      <Tooltip id="Instagram" />
       <Tooltip id="Twitter" />
       <Tooltip id="LinkedIn" />
     </div>
