@@ -93,6 +93,11 @@ const HomePage = ({ updatePage }) => (
         icon="fa-twitter"
       />
       <Icon
+        id="Youtube"
+        url="https://www.youtube.com/channel/UC0QZuLiH9R_Ec9Xdc1jAf4Q"
+        icon="fa-youtube-play"
+      />
+      <Icon
         id="LinkedIn"
         url="https://www.linkedin.com/in/joeaverbukh"
         icon="fa-linkedin-square"
@@ -113,6 +118,7 @@ const HomePage = ({ updatePage }) => (
       <Tooltip id="Github" />
       <Tooltip id="Instagram" />
       <Tooltip id="Twitter" />
+      <Tooltip id="Youtube" />
       <Tooltip id="LinkedIn" />
     </div>
   </div>
