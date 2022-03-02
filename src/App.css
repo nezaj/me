@@ -60,7 +60,7 @@ a:hover {
 
 .avatar {
   background-image: url(./headshot.jpg);
-  background-position-y: 20%;
+  background-position-y: 40%;
   background-size: 105%;
   border-radius: 125px;
   border-style: solid;
@@ -143,11 +143,10 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-
 @media screen and (max-width: 350px) {
   .page-icon,
   .icon {
-    font-size: 1.6rem;  /* Hack to get things to fit nicely on one-line */
+    font-size: 1.6rem; /* Hack to get things to fit nicely on one-line */
   }
 }
 
