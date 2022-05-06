@@ -19,8 +19,14 @@ const getPage = (queryString) => {
 // Functional Components
 // ---------------------------------------------------------------------------
 const Icon = ({ id, url, icon }) => (
-  <a title={id} href={url} className="icon">
-    <i data-tip data-for={id} className={`fa ${icon}`}></i>
+  <a title={id} href={url}>
+    <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
+  </a>
+);
+
+const SocialIcon = ({ id, url, icon }) => (
+  <a title={id} href={url}>
+    <i data-tip data-for={id} className={`fa ${icon} icon`}></i>
   </a>
 );
 
@@ -52,75 +58,87 @@ const HomePage = ({ updatePage }) => (
         </a>
       </li>
     </div>
-    <div className="about">This is where all my stuff lives on the web</div>
+    <div className="about">This is some stuff I've created on the web</div>
     <div className="icons-container">
       {/* Blogs */}
-      <Icon id="Travels" url="http://joetravels.com" icon="fa-plane" />
-      <Icon id="Vibes" url="https://joevibes.com" icon="fa-music" />
-      <Icon id="Moves" url="https://joemoves.com" icon="fa-superpowers" />
+      <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
+      <Icon id="Vibes" url="https://joevibes.com" icon="twa-musical-note" />
+      <Icon
+        id="Moves"
+        url="https://joemoves.com"
+        icon="twa twa-man-cartwheeling"
+      />
 
       {/* Apps */}
-      <Icon id="Foods" url="http://joelogs.com" icon="fa-spoon" />
-      <Icon id="Books" url="https://zeneca.io/joe" icon="fa-book" />
+      <Icon id="Foods" url="http://joelogs.com" icon="twa-bento-box" />
+      <Icon id="Books" url="https://zeneca.io/joe" icon="twa-books" />
+      <Icon
+        id="Daily Deal"
+        url="https://dailydeal.email"
+        icon="twa-martial-arts-uniform"
+      />
 
       {/* Books/Courses */}
       <Icon
         id="Senior Engineer Jobsearch Course"
         url="https://jobsearch.dev/"
-        icon="fa-laptop"
+        icon="twa-laptop"
       />
       <Icon
         id="How to Get Into a Programming Bootcamp"
         url="https://leanpub.com/programmingbootcamp"
-        icon="fa-graduation-cap"
+        icon="twa-graduation-cap"
       />
       <Icon
         id="Growing Pains"
         url="https://growingpainsbook.com"
-        icon="fa-pagelines"
+        icon="twa-herb"
       />
+    </div>
+    <div className="about">And these are my socials</div>
+    <div className="icons-container">
 
       {/* Social */}
-      <Icon id="Github" url="https://github.com/nezaj" icon="fa-github" />
-      <Icon
+      <SocialIcon id="Github" url="https://github.com/nezaj" icon="fa-github" />
+      <SocialIcon
         id="Instagram"
         url="https://www.instagram.com/notafraidof138"
         icon="fa-instagram"
       />
-      <Icon
+      <SocialIcon
         id="Twitter"
         url="https://www.twitter.com/joeaverbukh"
         icon="fa-twitter"
       />
-      <Icon
+      <SocialIcon
         id="Youtube"
         url="https://www.youtube.com/channel/UC0QZuLiH9R_Ec9Xdc1jAf4Q"
         icon="fa-youtube-play"
       />
-      <Icon
+      <SocialIcon
         id="LinkedIn"
         url="https://www.linkedin.com/in/joeaverbukh"
         icon="fa-linkedin-square"
       />
-
-      <Tooltip id="Consistent Fitness" place="bottom" />
-      <Tooltip id="Travels" />
-      <Tooltip id="Vibes" />
-      <Tooltip id="Moves" />
-
-      <Tooltip id="Foods" />
-      <Tooltip id="Books" />
-
-      <Tooltip id="Senior Engineer Jobsearch Course" />
-      <Tooltip id="How to Get Into a Programming Bootcamp" />
-      <Tooltip id="Growing Pains" />
-
-      <Tooltip id="Github" />
-      <Tooltip id="Instagram" />
-      <Tooltip id="Twitter" />
-      <Tooltip id="Youtube" />
-      <Tooltip id="LinkedIn" />
     </div>
+    <Tooltip id="Consistent Fitness" place="bottom" />
+    <Tooltip id="Travels" />
+    <Tooltip id="Vibes" />
+    <Tooltip id="Moves" />
+
+    <Tooltip id="Foods" />
+    <Tooltip id="Books" />
+    <Tooltip id="Daily Deal" />
+
+    <Tooltip id="Senior Engineer Jobsearch Course" />
+    <Tooltip id="How to Get Into a Programming Bootcamp" />
+    <Tooltip id="Growing Pains" />
+
+    <Tooltip id="Github" />
+    <Tooltip id="Instagram" />
+    <Tooltip id="Twitter" />
+    <Tooltip id="Youtube" />
+    <Tooltip id="LinkedIn" />
   </div>
 );
 

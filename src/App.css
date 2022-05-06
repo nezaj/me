@@ -117,7 +117,7 @@ a:hover {
 }
 
 .about {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.1;
   color: inherit;
@@ -126,8 +126,7 @@ a:hover {
 }
 
 .icon {
-  margin-left: 7.5px;
-  margin-right: 7.5px;
+  margin: 10px;
   font-size: 2rem;
 }
 
