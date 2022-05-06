@@ -91,7 +91,7 @@ a:hover {
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.1;
   color: inherit;
@@ -128,25 +128,6 @@ a:hover {
 .icon {
   margin: 10px;
   font-size: 2rem;
-}
-
-.page-icon {
-  display: inline-block;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-  font-size: 2rem;
-}
-
-.page-icon:hover {
-  cursor: pointer;
-  color: var(--link-hover-color);
-}
-
-@media screen and (max-width: 350px) {
-  .page-icon,
-  .icon {
-    font-size: 1.6rem; /* Hack to get things to fit nicely on one-line */
-  }
 }
 
 /* Tool-top persists when going backwards on mobile devices, so let's hide it */
