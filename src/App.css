@@ -3,32 +3,14 @@
 :root {
   --text-color: white;
   --link-color: white;
-  --link-hover-color: black;
-
-  /* Background gradient colors
-  ** Thanks: http://uigradients.com/#BetweenNightandDay
-  */
-  --bg-dark: #2c3e50;
-  --bg-light: #3498db;
-  --bg-fallback: #0072ff; /* http://uigradients.com/#FacebookMessenger */
+  --link-hover-color: red;
 }
 
 body {
   font-size: 62.5%;
   font-family: Montserrat, Helvetica, sans-serif;
   color: var(--text-color);
-
-  /* Background gradient hackary to support all the browsers! */
-  /* For browsers that don't support gradients */
-  background: var(--bg-fallback);
-  /* Safari 5.1-6.0 */
-  background: -webkit-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
-  /* For Opera 11.6-12.0 */
-  background: -o-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
-  /* For Firefox 3.6-15 */
-  background: -moz-radial-gradient(var(--bg-light) 5%, var(--bg-dark));
-  /* Standard syntax */
-  background: radial-gradient(circle, var(--bg-light) 5%, var(--bg-dark));
+  background: #002b40;
 }
 
 a {
@@ -37,13 +19,65 @@ a {
   &:visited {
     color: var(--link-color);
   }
-  &:hover {
-    color: var(--link-hover-color);
-  }
 }
 
-a:hover {
-  color: var(--link-hover-color);
+i {
+  -webkit-transition:  -webkit-transform .2s ease-out;
+  -moz-transition: -moz-transform .2s ease-out;
+  -o-transition: -o-transform .2s ease-out;
+  -ms-transition: -ms-transform .2s ease-out;
+  transition: transform .2s ease-out;
+}
+
+i:hover {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   transform:scale(1.2);
+}
+
+.consistent {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  -webkit-transition:font-size .2s ease-out;
+  -moz-transition:font-size .2s ease-out;
+  -o-transition:font-size .2s ease-out;
+  -ms-transition:font-size .2s ease-out;
+  transition:font-size .2s ease-out;
+
+}
+
+.consistent:hover {
+  font-size: 1.7rem;
+}
+
+a[title="Github"] {
+  color: white
+}
+a[title="Instagram"] {
+   color: #f09433;
+}
+a[title="Twitter"] {
+  color: rgb(29, 155, 240)
+}
+
+a[title="Youtube"] {
+  color: #f50057;
+}
+a[title="LinkedIn"] {
+  color: #0a66c2;
+}
+
+a[title="LinkedIn"] > i {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 22%,
+    white 22%,
+    white 78%,
+    transparent 78%,
+    transparent 100%
+  );
 }
 
 /* Shared */
@@ -64,8 +98,6 @@ a:hover {
   background-size: 105%;
   border-radius: 125px;
   border-style: solid;
-  border-width: thin;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,10 +115,6 @@ a:hover {
   .avatar {
     width: 250px;
     height: 250px;
-  }
-  .avatar:hover {
-    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
   }
 }
 

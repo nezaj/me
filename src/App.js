@@ -5,19 +5,6 @@ import "font-awesome/css/font-awesome.min.css";
 
 import "./App.css";
 
-// Pages
-const HOME_PAGE = "home";
-const DEFAULT_PAGE = HOME_PAGE;
-
-// Helpers
-// ---------------------------------------------------------------------------
-const getPage = (queryString) => {
-  const rawValue = new URLSearchParams(queryString).get("page");
-  return [HOME_PAGE].find((x) => x === rawValue) || DEFAULT_PAGE;
-};
-
-// Functional Components
-// ---------------------------------------------------------------------------
 const Icon = ({ id, url, icon }) => (
   <a title={id} href={url}>
     <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
@@ -38,7 +25,14 @@ const Tooltip = ({ id, place }) => (
   </div>
 );
 
-const HomePage = ({ updatePage }) => (
+const App = ()  => (
+  <div className="container">
+    <div className="header">
+      <div
+        className="avatar"
+      ></div>
+      <div className="title">Heya, I'm Joe!</div>
+    </div>
   <div className="home">
     <div className="subtitle">Three things I tell myself everyday:</div>
     <div className="principles">
@@ -46,15 +40,10 @@ const HomePage = ({ updatePage }) => (
       <li>Be honest</li>
       <li>
         <a
+          class="consistent"
           href="https://consistent.fit"
-          style={{
-            "text-decoration": "underline",
-            "text-underline-offset": "3px",
-          }}
         >
-          <span data-tip data-for="Consistent Fitness">
             Be consistent
-          </span>
         </a>
       </li>
     </div>
@@ -121,7 +110,6 @@ const HomePage = ({ updatePage }) => (
         icon="fa-linkedin-square"
       />
     </div>
-    <Tooltip id="Consistent Fitness" place="bottom" />
     <Tooltip id="Travels" />
     <Tooltip id="Vibes" />
     <Tooltip id="Moves" />
@@ -140,41 +128,8 @@ const HomePage = ({ updatePage }) => (
     <Tooltip id="Youtube" />
     <Tooltip id="LinkedIn" />
   </div>
-);
+  </div>
 
-// Stateful Components
-// ---------------------------------------------------------------------------
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      page: getPage(window.location.search),
-    };
-  }
-
-  updatePage = (page) => {
-    const currentPath = new URLSearchParams(window.location.search);
-    currentPath.set("page", page);
-    const newUrl = window.location.pathname + "?" + currentPath.toString();
-    window.history.pushState(null, "", newUrl);
-    this.setState({ page });
-  };
-
-  render() {
-    const { page } = this.state;
-    return (
-      <div className="container">
-        <div className="header">
-          <div
-            className="avatar"
-            onClick={() => this.updatePage(HOME_PAGE)}
-          ></div>
-          <div className="title">Heya, I'm Joe!</div>
-        </div>
-        {page === HOME_PAGE && <HomePage updatePage={this.updatePage} />}
-      </div>
-    );
-  }
-}
+)
 
 export default App;
