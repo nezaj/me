@@ -11,7 +11,7 @@ body {
   font-family: Montserrat, Helvetica, sans-serif;
   color: var(--text-color);
   background: #002b40;
-  zoom: 80%;
+  zoom: 85%;
 }
 
 a {
@@ -85,7 +85,7 @@ a[title="LinkedIn"] > i {
 .container {
   width: 90%;
   height: auto;
-  margin: 5% auto;
+  margin: 30px auto 0 auto;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
