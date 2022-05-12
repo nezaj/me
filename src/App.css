@@ -11,6 +11,7 @@ body {
   font-family: Montserrat, Helvetica, sans-serif;
   color: var(--text-color);
   background: #002b40;
+  zoom: 80%;
 }
 
 a {
@@ -22,29 +23,28 @@ a {
 }
 
 i {
-  -webkit-transition:  -webkit-transform .2s ease-out;
-  -moz-transition: -moz-transform .2s ease-out;
-  -o-transition: -o-transform .2s ease-out;
-  -ms-transition: -ms-transform .2s ease-out;
-  transition: transform .2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 i:hover {
-   -webkit-transform:scale(1.2);
-   -moz-transform:scale(1.2);
-   -o-transform:scale(1.2);
-   transform:scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .consistent {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-transition:font-size .2s ease-out;
-  -moz-transition:font-size .2s ease-out;
-  -o-transition:font-size .2s ease-out;
-  -ms-transition:font-size .2s ease-out;
-  transition:font-size .2s ease-out;
-
+  -webkit-transition: font-size 0.2s ease-out;
+  -moz-transition: font-size 0.2s ease-out;
+  -o-transition: font-size 0.2s ease-out;
+  -ms-transition: font-size 0.2s ease-out;
+  transition: font-size 0.2s ease-out;
 }
 
 .consistent:hover {
@@ -52,13 +52,13 @@ i:hover {
 }
 
 a[title="Github"] {
-  color: white
+  color: white;
 }
 a[title="Instagram"] {
-   color: #f09433;
+  color: #f09433;
 }
 a[title="Twitter"] {
-  color: rgb(29, 155, 240)
+  color: rgb(29, 155, 240);
 }
 
 a[title="Youtube"] {
