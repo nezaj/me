@@ -11,7 +11,13 @@ body {
   font-family: Montserrat, Helvetica, sans-serif;
   color: var(--text-color);
   background: #002b40;
-  zoom: 85%;
+  zoom: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    zoom: 85%;
+  }
 }
 
 a {
