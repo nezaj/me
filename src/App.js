@@ -6,13 +6,13 @@ import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 
 const Icon = ({ id, url, icon }) => (
-  <a title={id} href={url}>
+  <a title={id} href={url} target="_blank" rel="noopener noreferrer">
     <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
   </a>
 );
 
 const SocialIcon = ({ id, url, icon }) => (
-  <a title={id} href={url}>
+  <a title={id} href={url} target="_blank" rel="noopener noreferrer">
     <i data-tip data-for={id} className={`fa ${icon} icon`}></i>
   </a>
 );
@@ -37,7 +37,12 @@ const App = () => (
         <li>Be present</li>
         <li>Be honest</li>
         <li>
-          <a class="consistent" href="https://consistent.fit">
+          <a
+            class="consistent"
+            href="https://consistent.fit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Be consistent
           </a>
         </li>

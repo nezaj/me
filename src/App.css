@@ -46,15 +46,15 @@ i:hover {
 .consistent {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-transition: font-size 0.2s ease-out;
-  -moz-transition: font-size 0.2s ease-out;
-  -o-transition: font-size 0.2s ease-out;
-  -ms-transition: font-size 0.2s ease-out;
-  transition: font-size 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .consistent:hover {
-  font-size: 1.7rem;
+  color: rgba(251, 191, 36);
 }
 
 a[title="Github"] {
