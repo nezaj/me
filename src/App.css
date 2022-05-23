@@ -100,8 +100,7 @@ a[title="LinkedIn"] > i {
 
 .avatar {
   background-image: url(./headshot.jpg);
-  background-position-y: 40%;
-  background-size: 105%;
+  background-size: 100%;
   border-radius: 125px;
   border-style: solid;
   margin-left: auto;
