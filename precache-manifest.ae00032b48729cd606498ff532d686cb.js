@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8b4eb1ff4e1c9e7d1b6c7760c03f365",
+    "revision": "fe7cbf07bc89a3748d4b3a55a329085c",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.e6f51e71.chunk.css"
   },
   {
-    "revision": "3575fce7ffd3c4fd9a2e",
-    "url": "/static/css/main.56f6791a.chunk.css"
+    "revision": "f2c91d48ec653e5728c7",
+    "url": "/static/css/main.70157e68.chunk.css"
   },
   {
     "revision": "dbb2d0a76d8c07034b5d",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e02c6fe5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3575fce7ffd3c4fd9a2e",
+    "revision": "f2c91d48ec653e5728c7",
     "url": "/static/js/main.21674b42.chunk.js"
   },
   {
@@ -48,7 +48,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "93d614c2befc6df7a358c1dd1a6082c8",
-    "url": "/static/media/headshot.93d614c2.jpg"
+    "revision": "4d20c73f50eaa13a45ce4221aac9102d",
+    "url": "/static/media/headshot.4d20c73f.jpg"
   }
 ]);
