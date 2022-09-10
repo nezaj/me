@@ -49,34 +49,28 @@ const App = () => (
       </div>
       <div className="about">This is some stuff I've created on the web</div>
       <div className="icons-container">
-        {/* Blogs */}
-        <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
-        <Icon id="Vibes" url="https://joevibes.com" icon="twa-musical-note" />
-        <Icon
-          id="Moves"
-          url="https://joemoves.com"
-          icon="twa twa-man-cartwheeling"
-        />
-
         {/* Apps */}
-        <Icon id="Foods" url="http://joelogs.com" icon="twa-bento-box" />
+        <Icon id="Instant" url="https://instantdb.com" icon="twa-sparkles" />
         <Icon id="Books" url="https://zeneca.io/joe" icon="twa-books" />
-
-        {/* Manual breakpoint, hacky but works */}
-        <br />
-
         <Icon
           id="Daily Deal"
           url="https://dailydeal.email"
           icon="twa-martial-arts-uniform"
         />
-
-        {/* Books/Courses */}
         <Icon
           id="Senior Engineer Jobsearch Course"
           url="https://jobsearch.dev/"
           icon="twa-laptop"
         />
+
+        {/* Manual breakpoint, hacky but works */}
+        <br />
+
+        {/* Blogs */}
+        <Icon id="Vibes" url="https://joevibes.com" icon="twa-musical-note" />
+        <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
+
+        {/* Books/Courses */}
         <Icon
           id="How to Get Into a Programming Bootcamp"
           url="https://leanpub.com/programmingbootcamp"
@@ -117,15 +111,13 @@ const App = () => (
           icon="fa-linkedin-square"
         />
       </div>
-      <Tooltip id="Travels" />
-      <Tooltip id="Vibes" />
-      <Tooltip id="Moves" />
-
-      <Tooltip id="Foods" />
+      <Tooltip id="Instant" />
       <Tooltip id="Books" />
       <Tooltip id="Daily Deal" />
-
       <Tooltip id="Senior Engineer Jobsearch Course" />
+
+      <Tooltip id="Travels" />
+      <Tooltip id="Vibes" />
       <Tooltip id="How to Get Into a Programming Bootcamp" />
       <Tooltip id="Growing Pains" />
 
