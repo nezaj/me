@@ -7038,13 +7038,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-comment-regex@npm:^1.1.0":
-  version: 1.1.2
-  resolution: "html-comment-regex@npm:1.1.2"
-  checksum: 64c1e13c93f91554a06327176663037e630f5a47de8aae6a6a60cbca25e6d7b63ee16dd35707e33ba09288b900c6947050c6945c34a0a84d27f5415cef525599
-  languageName: node
-  linkType: hard
-
 "html-encoding-sniffer@npm:^1.0.2":
   version: 1.0.2
   resolution: "html-encoding-sniffer@npm:1.0.2"
@@ -7951,15 +7944,6 @@ __metadata:
   version: 1.0.5
   resolution: "is-string@npm:1.0.5"
   checksum: 68d77a991f55592721cc7d5800ff95cdb2c4f242e3a98fdc939c409879f7b8f297b8352184032b6b2183994b4c457f42df8de004c58b5b43655c8b2f3e3ecc17
-  languageName: node
-  linkType: hard
-
-"is-svg@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "is-svg@npm:3.0.0"
-  dependencies:
-    html-comment-regex: ^1.1.0
-  checksum: 5acaa204075324618713ab22447a2828dd639dbd388b44a5969b813c6f77fb89900de958761f3a64165a2fff84127e687a6660ae874b7de9d673c73c92009e44
   languageName: node
   linkType: hard
 
@@ -11529,14 +11513,13 @@ __metadata:
   linkType: hard
 
 "postcss-svgo@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "postcss-svgo@npm:4.0.2"
+  version: 4.0.3
+  resolution: "postcss-svgo@npm:4.0.3"
   dependencies:
-    is-svg: ^3.0.0
     postcss: ^7.0.0
     postcss-value-parser: ^3.0.0
     svgo: ^1.0.0
-  checksum: 618d3d29f2ddf1dbf142e6bd1ba54b0582686a366a05c2ffe50fb3f687f250cb1c13be000648790bb7e7af866b03cfcf2eb4dd702ac397bd07639ae31bc81d9e
+  checksum: 6f5264241193ca3ba748fdf43c88ef692948d2ae38787398dc90089061fed884064ec14ee244fce07f19c419d1b058c77e135407d0932b09e93e528581ce3e10
   languageName: node
   linkType: hard
 
