@@ -5,7 +5,7 @@ See it [live](http://www.joeaverbukh.com)
 ### Quick start
 ```
 git clone ...
-npm i
+yarn install
 yarn start
 ```
 
