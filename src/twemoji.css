@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*
+
+(TODO): Use an npm package instead of these CSS classes.
+
+When I first used twemoji I loaded the icons via CSS from https://github.com/SebastianAigner/twemoji-amazing. This file loaded images from MaxCDN which has since been shut down. I downloaded this css file locally and updated the CDN per https://github.com/twitter/twemoji/issues/580#issuecomment-1376299586
+
+The CSS file is 535kb though which kills my page load. So instead I manually extracted the classes I use for my website. The full CSS file is located in the project root. Instead of this hack I should just use some npm package where I import icons but I can't be bothered to look that up right now.
+*/
+
+.twa {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 1em;
+}
+
+.twa-sparkles {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2728.svg");
+}
+.twa-books {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4da.svg");
+}
+.twa-martial-arts-uniform {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f94b.svg");
+}
+.twa-laptop {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4bb.svg");
+}
+.twa-musical-note {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3b5.svg");
+}
+.twa-airplane {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2708.svg");
+}
+.twa-graduation-cap {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f393.svg");
+}
+.twa-herb {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f33f.svg");
+}

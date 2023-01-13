@@ -4,6 +4,7 @@ import ReactTooltip from "react-tooltip";
 import "font-awesome/css/font-awesome.min.css";
 
 import "./App.css";
+import "./twemoji.css";
 
 const Icon = ({ id, url, icon }) => (
   <a title={id} href={url} target="_blank" rel="noopener noreferrer">

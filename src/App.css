@@ -159,7 +159,7 @@ a[title="LinkedIn"] > i {
 }
 
 .icon {
-  margin: 10px;
+  margin: 10px !important;
   font-size: 2rem;
 }
 
