@@ -9300,13 +9300,13 @@ __metadata:
   linkType: hard
 
 "merge-deep@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "merge-deep@npm:3.0.2"
+  version: 3.0.3
+  resolution: "merge-deep@npm:3.0.3"
   dependencies:
     arr-union: ^3.1.0
     clone-deep: ^0.2.4
     kind-of: ^3.0.2
-  checksum: 8fcf648fa7bfb88db5a8388324016894118fda2d783de53a32b5955367e34fe9d0a6cb170a7cb635fc540ba9a0d05d441368855f62c2c22d220b78d1d377cf30
+  checksum: d2eb367b8300327c66a3e1e01eb06251f51b440bf5bfa5f0f8065ae95bf3af620d21fcd0ab2eb50e74f5119aac40ffd26c85e3bf82f79082e8757675f5885d3d
   languageName: node
   linkType: hard
 
