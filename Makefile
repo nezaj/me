@@ -9,10 +9,10 @@ repl:
 
 dev:
 	@echo "Starting dev server..."
-	yarn start
+	npm run start
 
 deploy:
 	@echo "Deploying to master..."
 	git push origin master
 	@echo "Deploying to github pages..."
-	yarn deploy
+	npm run deploy

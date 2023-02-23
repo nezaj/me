@@ -11,7 +11,7 @@ yarn start
 
 ## Quick facts
 
-* Run it locally: `yarn start`
-* Deploy: `yarn deploy`
+* Run it locally: `npm run start`
+* Deploy: `npm run deploy`
 * Push + Deploy: `make deploy`
 * Fire up repl: `make repl`
