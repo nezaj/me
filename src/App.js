@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 import "font-awesome/css/font-awesome.min.css";
 
 import "./App.css";
-import "./tree.css";
 import "./twemoji.css";
 import treePath from "./tree.md";
 
@@ -107,34 +106,30 @@ const Home = () => (
         </div>
         <div className="about">This is some stuff I've created on the web</div>
         <div className="icons-container">
-          {/* Apps */}
           <Icon id="Instant" url="https://instantdb.com" icon="twa-sparkles" />
           <Icon id="Books" url="https://zeneca.io/joe" icon="twa-books" />
-          <Icon
-            id="Daily Deal"
-            url="https://dailydeal.email"
-            icon="twa-martial-arts-uniform"
-          />
           <Icon
             id="Senior Engineer Jobsearch Course"
             url="https://jobsearch.dev/"
             icon="twa-laptop"
           />
+          <Icon id="A Tale of Two Trees" url="/?page=essay" icon="twa-herb" />
 
           {/* Manual breakpoint, hacky but works */}
           <br />
 
-          {/* Blogs */}
+          <Icon
+            id="Daily Deal"
+            url="https://dailydeal.email"
+            icon="twa-martial-arts-uniform"
+          />
           <Icon id="Vibes" url="https://joevibes.com" icon="twa-musical-note" />
           <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
-
-          {/* Books/Courses */}
           <Icon
             id="How to Get Into a Programming Bootcamp"
             url="https://leanpub.com/programmingbootcamp"
             icon="twa-graduation-cap"
           />
-          <Icon id="A Tale of Two Trees" url="/?page=essay" icon="twa-herb" />
         </div>
         <div className="about">And these are my socials</div>
         <div className="icons-container">
@@ -167,13 +162,13 @@ const Home = () => (
         </div>
         <Tooltip id="Instant" />
         <Tooltip id="Books" />
-        <Tooltip id="Daily Deal" />
         <Tooltip id="Senior Engineer Jobsearch Course" />
-
-        <Tooltip id="Travels" />
-        <Tooltip id="Vibes" />
-        <Tooltip id="How to Get Into a Programming Bootcamp" />
         <Tooltip id="A Tale of Two Trees" />
+
+        <Tooltip id="Daily Deal" />
+        <Tooltip id="Vibes" />
+        <Tooltip id="Travels" />
+        <Tooltip id="How to Get Into a Programming Bootcamp" />
 
         <Tooltip id="Github" />
         <Tooltip id="Instagram" />
@@ -188,7 +183,7 @@ const Home = () => (
 // App
 // -----------------
 const App = () => {
-  const [page, setPage] = useState(getLocationPage(window.location.search));
+  const page = getLocationPage(window.location.search);
 
   let Page;
   switch (page) {

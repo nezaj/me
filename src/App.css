@@ -183,11 +183,13 @@ a[title="LinkedIn"] > i {
   margin: 0 auto;
   line-height: 2;
   font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 800px) {
   .tree-essay {
     width: 80%;
+    line-height: 1.8;
   }
 }
 
