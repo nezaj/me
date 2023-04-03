@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 
 import "font-awesome/css/font-awesome.min.css";
 
-import { updateLocation, clearLocation } from "./location";
 import "./App.css";
 import "./tree.css";
 import "./twemoji.css";
@@ -14,7 +13,6 @@ import treePath from "./tree.md";
 // -----------------
 const getLocationPage = (queryString) => {
   const rawValue = new URLSearchParams(queryString).get("page");
-  console.log(rawValue);
   return ["home", "essay"].find((x) => x === rawValue) || "home";
 };
 
@@ -32,12 +30,6 @@ const SocialIcon = ({ id, url, icon }) => (
   </a>
 );
 
-const PageIcon = ({ id, onClick, icon }) => (
-  <span title={id} onClick={onClick}>
-    <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
-  </span>
-);
-
 const Tooltip = ({ id, place }) => (
   <div>
     <ReactTooltip id={id} place={place || "top"} effect="solid">
@@ -48,7 +40,7 @@ const Tooltip = ({ id, place }) => (
 
 // Pages
 // -----------------
-const Essay = ({ updatePage }) => {
+const Essay = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [md, setMd] = useState("");
   useEffect(() => {
@@ -67,9 +59,14 @@ const Essay = ({ updatePage }) => {
         <div>
           <ReactMarkdown source={md} />
           <div className="links">
-            <div className="link" onClick={() => updatePage("home")}>
+            <a
+              className="link"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Home
-            </div>
+            </a>
             <a
               className="link"
               href="https://growingpainsbook.com/"
@@ -85,7 +82,7 @@ const Essay = ({ updatePage }) => {
   );
 };
 
-const Home = ({ updatePage }) => (
+const Home = () => (
   <div className="wrapper">
     <div className="container">
       <div className="header">
@@ -137,11 +134,7 @@ const Home = ({ updatePage }) => (
             url="https://leanpub.com/programmingbootcamp"
             icon="twa-graduation-cap"
           />
-          <PageIcon
-            id="A Tale of Two Trees"
-            onClick={() => updatePage("essay")}
-            icon="twa-herb"
-          />
+          <Icon id="A Tale of Two Trees" url="/?page=essay" icon="twa-herb" />
         </div>
         <div className="about">And these are my socials</div>
         <div className="icons-container">
@@ -197,19 +190,14 @@ const Home = ({ updatePage }) => (
 const App = () => {
   const [page, setPage] = useState(getLocationPage(window.location.search));
 
-  const updatePage = (page) => {
-    page === "home" ? clearLocation() : updateLocation("page", page);
-    setPage(page);
-  };
-
   let Page;
   switch (page) {
     case "essay":
-      Page = <Essay updatePage={updatePage} />;
+      Page = <Essay />;
       break;
     case "home":
     default:
-      Page = <Home updatePage={updatePage} />;
+      Page = <Home />;
   }
 
   return <div>{Page}</div>;
