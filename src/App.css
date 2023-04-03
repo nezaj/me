@@ -7,17 +7,8 @@
 }
 
 body {
-  font-size: 62.5%;
+  margin: 0;
   font-family: Montserrat, Helvetica, sans-serif;
-  color: var(--text-color);
-  background: #1A202C;
-  zoom: 80%;
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    zoom: 85%;
-  }
 }
 
 a {
@@ -86,16 +77,32 @@ a[title="LinkedIn"] > i {
   );
 }
 
-/* Shared */
+/* Home Page */
 /* --------------------------------------------------------------- */
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: var(--text-color);
+  background: #1a202c;
+}
+
 .container {
+  zoom: 80%;
+  font-size: 62.5%;
   width: 90%;
   height: auto;
-  margin: 30px auto 0 auto;
+  padding-top: 30px;
+  margin: 0 auto 0 auto;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    zoom: 85%;
+  }
 }
 
 .avatar {
@@ -137,9 +144,6 @@ a[title="LinkedIn"] > i {
   margin-bottom: 30px;
 }
 
-/* Home Page */
-/* --------------------------------------------------------------- */
-
 .principles li {
   list-style-type: none;
   margin-top: 10px;
@@ -161,6 +165,7 @@ a[title="LinkedIn"] > i {
 .icon {
   margin: 10px !important;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Tool-top persists when going backwards on mobile devices, so let's hide it */
@@ -168,4 +173,33 @@ a[title="LinkedIn"] > i {
   .__react_component_tooltip.show {
     display: none;
   }
+}
+
+/* Essay */
+/* --------------------------------------------------------------- */
+
+.tree-essay {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .tree-essay {
+    width: 80%;
+  }
+}
+
+.tree-essay .link {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.tree-essay .links {
+  margin-left: -4px;
+  margin-right: 4px;
 }
