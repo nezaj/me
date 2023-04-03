@@ -85,29 +85,6 @@ const Essay = ({ updatePage }) => {
   );
 };
 
-// App
-// -----------------
-const App = () => {
-  const [page, setPage] = useState(getLocationPage(window.location.search));
-
-  const updatePage = (page) => {
-    page === "home" ? clearLocation() : updateLocation("page", page);
-    setPage(page);
-  };
-
-  let Page;
-  switch (page) {
-    case "essay":
-      Page = <Essay updatePage={updatePage} />;
-      break;
-    case "home":
-    default:
-      Page = <Home updatePage={updatePage} />;
-  }
-
-  return <div>{Page}</div>;
-};
-
 const Home = ({ updatePage }) => (
   <div className="wrapper">
     <div className="container">
@@ -214,5 +191,28 @@ const Home = ({ updatePage }) => (
     </div>
   </div>
 );
+
+// App
+// -----------------
+const App = () => {
+  const [page, setPage] = useState(getLocationPage(window.location.search));
+
+  const updatePage = (page) => {
+    page === "home" ? clearLocation() : updateLocation("page", page);
+    setPage(page);
+  };
+
+  let Page;
+  switch (page) {
+    case "essay":
+      Page = <Essay updatePage={updatePage} />;
+      break;
+    case "home":
+    default:
+      Page = <Home updatePage={updatePage} />;
+  }
+
+  return <div>{Page}</div>;
+};
 
 export default App;
