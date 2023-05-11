@@ -123,6 +123,11 @@ const Home = () => (
             url="https://dailydeal.email"
             icon="twa-martial-arts-uniform"
           />
+          <Icon
+            id="Art"
+            url="https://joeshares.tumblr.com/"
+            icon="twa-artist-palette"
+          />
           <Icon id="Vibes" url="https://joevibes.com" icon="twa-musical-note" />
           <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
           <Icon
@@ -166,6 +171,7 @@ const Home = () => (
         <Tooltip id="A Tale of Two Trees" />
 
         <Tooltip id="Daily Deal" />
+        <Tooltip id="Art" />
         <Tooltip id="Vibes" />
         <Tooltip id="Travels" />
         <Tooltip id="How to Get Into a Programming Bootcamp" />
