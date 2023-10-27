@@ -39,6 +39,7 @@ const Tooltip = ({ id, place }) => (
 
 // Pages
 // -----------------
+// (XXX): I moved this to jowords.com so may want to deprecate this
 const Essay = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [md, setMd] = useState("");
@@ -113,7 +114,11 @@ const Home = () => (
             url="https://jobsearch.dev/"
             icon="twa-laptop"
           />
-          <Icon id="A Tale of Two Trees" url="/?page=essay" icon="twa-herb" />
+          <Icon
+            id="A Tale of Two Trees"
+            url="https://www.joewords.com/posts/tale_of_two_trees"
+            icon="twa-herb"
+          />
 
           {/* Manual breakpoint, hacky but works */}
           <br />
