@@ -1,28 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4f1c8bc.chunk.css",
-    "main.js": "/static/js/main.cfc3a48f.chunk.js",
-    "main.js.map": "/static/js/main.cfc3a48f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.541757bc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.541757bc.js.map",
-    "static/css/2.e6f51e71.chunk.css": "/static/css/2.e6f51e71.chunk.css",
-    "static/js/2.51eae72d.chunk.js": "/static/js/2.51eae72d.chunk.js",
-    "static/js/2.51eae72d.chunk.js.map": "/static/js/2.51eae72d.chunk.js.map",
+    "main.css": "/static/css/main.bec4c80f.css",
+    "main.js": "/static/js/main.ae3aa507.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/headshot.jpg": "/static/media/headshot.1e80127cafd7cf379ac3.jpg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/tree.md": "/static/media/tree.e9f6216a953c157b2103.md",
     "index.html": "/index.html",
-    "precache-manifest.9de054a8553cded1244a685610d9f0ef.js": "/precache-manifest.9de054a8553cded1244a685610d9f0ef.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.e6f51e71.chunk.css.map": "/static/css/2.e6f51e71.chunk.css.map",
-    "static/css/main.e4f1c8bc.chunk.css.map": "/static/css/main.e4f1c8bc.chunk.css.map",
-    "static/js/2.51eae72d.chunk.js.LICENSE.txt": "/static/js/2.51eae72d.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/App.css": "/static/media/headshot.72c9ee0c.jpg",
-    "static/media/tree.md": "/static/media/tree.a2abc063.md"
+    "main.bec4c80f.css.map": "/static/css/main.bec4c80f.css.map",
+    "main.ae3aa507.js.map": "/static/js/main.ae3aa507.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.541757bc.js",
-    "static/css/2.e6f51e71.chunk.css",
-    "static/js/2.51eae72d.chunk.js",
-    "static/css/main.e4f1c8bc.chunk.css",
-    "static/js/main.cfc3a48f.chunk.js"
+    "static/css/main.bec4c80f.css",
+    "static/js/main.ae3aa507.js"
   ]
 }
