@@ -12,7 +12,9 @@ dev:
 	npm run start
 
 deploy:
-	@echo "Deploying to master..."
+	@echo "Pushing to master..."
+	git add .
+	git commit -m "sm"
 	git push origin master
 	@echo "Deploying to github pages..."
 	npm run deploy
