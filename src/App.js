@@ -137,7 +137,7 @@ const Home = () => (
           <Icon id="Travels" url="http://joetravels.com" icon="twa-airplane" />
           <Icon
             id="How to Get Into a Programming Bootcamp"
-            url="https://leanpub.com/programmingbootcamp"
+            url="https://github.com/nezaj/code-camp-guide/tree/master"
             icon="twa-graduation-cap"
           />
         </div>
