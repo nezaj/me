@@ -141,7 +141,7 @@ const Home = () => (
             icon="twa-graduation-cap"
           />
         </div>
-        <div className="about">And these are my socials moop</div>
+        <div className="about">And these are my socials</div>
         <div className="icons-container">
           {/* Social */}
           <SocialIcon
