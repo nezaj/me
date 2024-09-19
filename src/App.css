@@ -1,46 +1,46 @@
-/* Tags */
-/* --------------------------------------------------------------- */
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --text-color: white;
   --link-color: white;
   --link-hover-color: red;
 }
 
+html,
 body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
   color: var(--link-color);
-  &:visited {
-    color: var(--link-color);
-  }
+}
+
+a:visited {
+  color: var(--link-color);
 }
 
 i {
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-  -moz-transition: -moz-transform 0.2s ease-out;
-  -o-transition: -o-transform 0.2s ease-out;
-  -ms-transition: -ms-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
 }
 
 i:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .consistent {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  -ms-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
@@ -51,9 +51,11 @@ i:hover {
 a[title="Github"] {
   color: white;
 }
+
 a[title="Instagram"] {
   color: #f09433;
 }
+
 a[title="Twitter"] {
   color: rgb(29, 155, 240);
 }
@@ -61,42 +63,41 @@ a[title="Twitter"] {
 a[title="Youtube"] {
   color: #f50057;
 }
+
 a[title="LinkedIn"] {
   color: #0a66c2;
 }
 
-a[title="LinkedIn"] > i {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 22%,
-    white 22%,
-    white 78%,
-    transparent 78%,
-    transparent 100%
-  );
+a[title="LinkedIn"]>i {
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 22%,
+      white 22%,
+      white 78%,
+      transparent 78%,
+      transparent 100%);
 }
 
 /* Home Page */
-/* --------------------------------------------------------------- */
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   color: var(--text-color);
   background: #1a202c;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
+  flex: 1;
   zoom: 80%;
   font-size: 62.5%;
   width: 90%;
   height: auto;
   padding-top: 30px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 @media screen and (max-width: 480px) {
@@ -168,7 +169,7 @@ a[title="LinkedIn"] > i {
   cursor: pointer;
 }
 
-/* Tool-top persists when going backwards on mobile devices, so let's hide it */
+/* Tool-tip persists when going backwards on mobile devices, so let's hide it */
 @media (max-width: 800px) {
   .__react_component_tooltip.show {
     display: none;
@@ -176,8 +177,6 @@ a[title="LinkedIn"] > i {
 }
 
 /* Essay */
-/* --------------------------------------------------------------- */
-
 .tree-essay {
   width: 50%;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ReactTooltip from "react-tooltip";
 import ReactMarkdown from "react-markdown";
+import RawTooltip from "./components/Tooltip";
 
 import "font-awesome/css/font-awesome.min.css";
 
@@ -18,23 +18,19 @@ const getLocationPage = (queryString) => {
 // Components
 // -----------------
 const Icon = ({ id, url, icon }) => (
-  <a title={id} href={url} target="_blank" rel="noopener noreferrer">
-    <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
-  </a>
+  <RawTooltip text={id}>
+    <a title={id} href={url} target="_blank" rel="noopener noreferrer">
+      <i data-tip data-for={id} className={`twa ${icon} icon`}></i>
+    </a>
+  </RawTooltip>
 );
 
 const SocialIcon = ({ id, url, icon }) => (
-  <a title={id} href={url} target="_blank" rel="noopener noreferrer">
-    <i data-tip data-for={id} className={`fa ${icon} icon`}></i>
-  </a>
-);
-
-const Tooltip = ({ id, place }) => (
-  <div>
-    <ReactTooltip id={id} place={place || "top"} effect="solid">
-      {id}
-    </ReactTooltip>
-  </div>
+  <RawTooltip text={id}>
+    <a title={id} href={url} target="_blank" rel="noopener noreferrer">
+      <i data-tip data-for={id} className={`fa ${icon} icon`}></i>
+    </a>
+  </RawTooltip>
 );
 
 // Pages
@@ -170,25 +166,9 @@ const Home = () => (
             icon="fa-linkedin-square"
           />
         </div>
-        <Tooltip id="Instant" />
-        <Tooltip id="Books" />
-        <Tooltip id="Senior Engineer Jobsearch Course" />
-        <Tooltip id="A Tale of Two Trees" />
-
-        <Tooltip id="Daily Deal" />
-        <Tooltip id="Art" />
-        <Tooltip id="Vibes" />
-        <Tooltip id="Travels" />
-        <Tooltip id="How to Get Into a Programming Bootcamp" />
-
-        <Tooltip id="Github" />
-        <Tooltip id="Instagram" />
-        <Tooltip id="Twitter" />
-        <Tooltip id="Youtube" />
-        <Tooltip id="LinkedIn" />
       </div>
     </div>
-  </div>
+  </div >
 );
 
 // App
