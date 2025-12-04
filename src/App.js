@@ -104,7 +104,8 @@ const Home = () => (
         <div className="about">This is some stuff I've created on the web</div>
         <div className="icons-container">
           <Icon id="Instant" url="https://instantdb.com" icon="twa-sparkles" />
-          <Icon id="Books" url="https://zeneca.io/joe" icon="twa-books" />
+          <Icon id="Zeneca" url="https://zeneca.io/joe" icon="twa-books" />
+          <Icon id="Save Trippy" url="https://savetrippy.com" icon="twa-turkey" />
           <Icon
             id="Senior Engineer Jobsearch Course"
             url="https://jobsearch.dev/"

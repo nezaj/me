@@ -46,3 +46,6 @@ The CSS file is 535kb though which kills my page load. So instead I manually ext
 .twa-artist-palette {
   background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3a8.svg");
 }
+.twa-turkey {
+  background-image: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f983.svg");
+}
