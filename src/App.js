@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import RawTooltip from "./components/Tooltip";
 
@@ -189,6 +189,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/t" component={Tools} />
       <Route path="/essay" component={Essay} />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>
 );
