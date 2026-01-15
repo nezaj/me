@@ -12,13 +12,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
+    "react-router-dom": "5",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build && cp build/index.html build/404.html",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },

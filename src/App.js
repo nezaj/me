@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import RawTooltip from "./components/Tooltip";
 
@@ -7,13 +8,6 @@ import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 import "./twemoji.css";
 import treePath from "./tree.md";
-
-// Navigation
-// -----------------
-const getLocationPage = (queryString) => {
-  const rawValue = new URLSearchParams(queryString).get("page");
-  return ["home", "essay"].find((x) => x === rawValue) || "home";
-};
 
 // Components
 // -----------------
@@ -55,14 +49,9 @@ const Essay = () => {
         <div>
           <ReactMarkdown source={md} />
           <div className="links">
-            <a
-              className="link"
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link className="link" to="/">
               Home
-            </a>
+            </Link>
             <a
               className="link"
               href="https://growingpainsbook.com/"
@@ -77,6 +66,25 @@ const Essay = () => {
     </div>
   );
 };
+
+const toolsData = [
+  { name: "Weekly Review", url: "https://weekly-review-sable.vercel.app/", description: "Weekly review tool for 2026" },
+];
+
+const Tools = () => (
+  <div className="tools-page">
+    <h1>Tools</h1>
+    <p>Additional tools I've made for myself</p>
+    <ul>
+      {toolsData.map((tool) => (
+        <li key={tool.name}>
+          <a href={tool.url} target="_blank" rel="noopener noreferrer">{tool.name}</a> -- {tool.description}
+        </li>
+      ))}
+    </ul>
+    <p><Link to="/">Home</Link></p>
+  </div>
+);
 
 const Home = () => (
   <div className="wrapper">
@@ -174,20 +182,14 @@ const Home = () => (
 
 // App
 // -----------------
-const App = () => {
-  const page = getLocationPage(window.location.search);
-
-  let Page;
-  switch (page) {
-    case "essay":
-      Page = <Essay />;
-      break;
-    case "home":
-    default:
-      Page = <Home />;
-  }
-
-  return <div>{Page}</div>;
-};
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/t" component={Tools} />
+      <Route path="/essay" component={Essay} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;

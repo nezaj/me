@@ -176,6 +176,17 @@ a[title="LinkedIn"]>i {
   }
 }
 
+/* Tools Page */
+.tools-page {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tools-page a {
+  color: #0066cc;
+}
+
 /* Essay */
 .tree-essay {
   width: 50%;
