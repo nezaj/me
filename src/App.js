@@ -68,6 +68,7 @@ const Essay = () => {
 };
 
 const toolsData = [
+  { name: "Parents 2025 Trip", url: "https://mom-gary-trip-2025.vercel.app", description: "Visualization of my parents travels!" },
   { name: "Weekly Review", url: "https://weekly-review-sable.vercel.app/", description: "Weekly review tool for 2026" },
 ];
 
