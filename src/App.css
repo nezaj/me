@@ -215,3 +215,88 @@ a[title="LinkedIn"]>i {
   margin-left: -4px;
   margin-right: 4px;
 }
+
+/* Stopwatch Page */
+.stopwatch-page {
+  min-height: 100vh;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.stopwatch-container {
+  text-align: center;
+}
+
+.stopwatch-display {
+  font-family: ui-monospace, monospace;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .stopwatch-display {
+    font-size: 8rem;
+  }
+}
+
+.stopwatch-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.stopwatch-btn {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stopwatch-btn.start {
+  background-color: #10b981;
+  color: white;
+}
+
+.stopwatch-btn.start:hover {
+  background-color: #059669;
+}
+
+.stopwatch-btn.running {
+  background-color: #f59e0b;
+  color: #0f172a;
+}
+
+.stopwatch-btn.running:hover {
+  background-color: #d97706;
+}
+
+.stopwatch-btn.reset {
+  background-color: #334155;
+  color: white;
+}
+
+.stopwatch-btn.reset:hover {
+  background-color: #475569;
+}
+
+.stopwatch-hint {
+  margin-top: 2rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.stopwatch-hint kbd {
+  padding: 0.25rem 0.5rem;
+  background-color: #334155;
+  border-radius: 0.25rem;
+  color: #cbd5e1;
+}

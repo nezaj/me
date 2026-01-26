@@ -87,6 +87,66 @@ const Tools = () => (
   </div>
 );
 
+const Stopwatch = () => {
+  const [time, setTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+
+  useEffect(() => {
+    let intervalId = null;
+    if (isRunning) {
+      intervalId = setInterval(() => {
+        setTime((t) => t + 10);
+      }, 10);
+    }
+    return () => clearInterval(intervalId);
+  }, [isRunning]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.code === "Space") {
+        e.preventDefault();
+        setIsRunning((r) => !r);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const formatTime = (ms) => {
+    const minutes = Math.floor(ms / 60000);
+    const seconds = Math.floor((ms % 60000) / 1000);
+    const centiseconds = Math.floor((ms % 1000) / 10);
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${String(centiseconds).padStart(2, "0")}`;
+  };
+
+  const reset = () => {
+    setIsRunning(false);
+    setTime(0);
+  };
+
+  return (
+    <div className="stopwatch-page">
+      <div className="stopwatch-container">
+        <div className="stopwatch-display">{formatTime(time)}</div>
+        <div className="stopwatch-buttons">
+          <button
+            className={`stopwatch-btn ${isRunning ? "running" : "start"}`}
+            onClick={() => setIsRunning((r) => !r)}
+          >
+            {isRunning ? "Stop" : "Start"}
+          </button>
+          <button className="stopwatch-btn reset" onClick={reset}>
+            Reset
+          </button>
+        </div>
+        <p className="stopwatch-hint">
+          Press <kbd>Space</kbd> to start/stop
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const Home = () => (
   <div className="wrapper">
     <div className="container">
@@ -188,6 +248,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/t" component={Tools} />
+      <Route path="/sw" component={Stopwatch} />
       <Route path="/essay" component={Essay} />
       <Redirect to="/" />
     </Switch>
