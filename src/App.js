@@ -68,6 +68,7 @@ const Essay = () => {
 };
 
 const toolsData = [
+  { name: "Stopwatch", url: "/sw", description: "Simple stopwatch with spacebar toggle" },
   { name: "Parents 2025 Trip", url: "https://mom-gary-trip-2025.vercel.app", description: "Visualization of my parents travels!" },
   { name: "Weekly Review", url: "https://weekly-review-sable.vercel.app/", description: "Weekly review tool for 2026" },
 ];
@@ -106,11 +107,14 @@ const Stopwatch = () => {
       if (e.code === "Space") {
         e.preventDefault();
         setIsRunning((r) => !r);
+      } else if (e.code === "KeyR" && !isRunning) {
+        e.preventDefault();
+        setTime(0);
       }
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [isRunning]);
 
   const formatTime = (ms) => {
     const minutes = Math.floor(ms / 60000);
